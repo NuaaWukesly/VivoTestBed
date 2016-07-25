@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="49dp" >
+
+    <TextView
+        android:id="@+id/usecase_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:hint="@string/usecase_name"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#ff000000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/usecase_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usecase_name"
+        android:ellipsize="end"
+        android:hint="@string/usecase_introductions"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        android:textColor="#ff818181"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#ffc8c8c8" />
+
+</RelativeLayout>

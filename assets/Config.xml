@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+
+    <!--
+    this is a demo for config usecase.
+    <usecase name = "the name of usecase" info = "the summary of usecase" action = "the Action to start component execute usecase"/>
+    -->
+
+    <usecase
+        name="资源获取性能测试"
+        action="com.vivo.testbed.performance.getrestest"
+        info="资源获取的性能，是否耗时." />
+
+</Config>
