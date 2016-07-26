@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_normal_size">15sp</dimen>
+    <dimen name="content_margin">24dp</dimen>
+    <dimen name="listview_first_line_size">17sp</dimen>
+    <dimen name="listview_second_line_size">13sp</dimen>
+    <dimen name="listview_margin">16dp</dimen>
+    <dimen name="divider_height">2px</dimen>
+    <dimen name="list_tow_height">49dp</dimen>
+    <dimen name="list_single_height">46dp</dimen>
+
+</resources>

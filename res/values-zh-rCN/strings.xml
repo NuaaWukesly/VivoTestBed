@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">VivoTestBed</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="usecase_name">name</string>
-    <string name="usecase_introductions">introductions</string>
-    <string name="title_activity_res_time_test">ResTimeTestActivity</string>
+    <string name="app_name">Vivo测试平台</string>
+    <string name="title_activity_res_time_test">资源相关测试</string>
     <string name="artists_tab_text">Artists</string>
     <string name="albums_tab_text">Albums</string>
     <string name="not_normal_text">Illegal character</string>
@@ -661,9 +658,8 @@
     <string name="play_list_count">"count"</string>
     <string name="lrc_loading">"Loading..."</string>
     <string name="search_lyric_album_button">Lyric</string>
-    <string name="title_activity_mulit_thread_test">MulitThreadTest</string>
-    <string name="title_activity_this_lock_test">ThisLockTest</string>
-    <string name="title_activity_case">CaseActivity</string>
-    <string name="title_activity_call_same_func_test">CallSameFuncTest</string>
+    <string name="title_activity_mulit_thread_test">多线程相关测试</string>
+    <string name="title_activity_this_lock_test">this锁测试</string>
+    <string name="title_activity_call_same_func_test">多线程方法栈</string>
 
 </resources>

@@ -37,6 +37,9 @@ public class ConfigEngine<T> extends AsyncTask<ConfigEngineParam, Void, List<T>>
     protected void onPostExecute(List<T> result) {
         // TODO 自动生成的方法存根
         super.onPostExecute(result);
+        if (result != null) {
+            Log.d("executor", "result size = "  + result.size());
+        }
         mCallback.getConfig(result);
     }
 
@@ -65,7 +68,7 @@ public class ConfigEngine<T> extends AsyncTask<ConfigEngineParam, Void, List<T>>
                     case XmlPullParser.START_TAG:
                         String tag = xmlPullParser.getName();
                         Log.d("executor", "start_tag = "  + tag);
-                        if (tag.equalsIgnoreCase(Config.CONFIG_USECASE)) {
+                        if (tag.equalsIgnoreCase(param.mConfigType)) {
                             config = new Usecase();
                             ((Usecase) config).mName = xmlPullParser.getAttributeValue(null,
                                     Config.GONFIG_NAME);
@@ -78,7 +81,7 @@ public class ConfigEngine<T> extends AsyncTask<ConfigEngineParam, Void, List<T>>
                     case XmlPullParser.END_TAG:
                         tag = xmlPullParser.getName();
                         Log.d("executor", "end_tag = "  + tag);
-                        if (tag.equalsIgnoreCase(Config.CONFIG_USECASE)
+                        if (tag.equalsIgnoreCase(param.mConfigType)
                                 && config != null) {
                             configs.add(config);
                             config = null;

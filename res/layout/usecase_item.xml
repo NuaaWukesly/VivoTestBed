@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:minHeight="49dp" >
+    android:minHeight="@dimen/list_tow_height" >
 
     <TextView
         android:id="@+id/usecase_name"
@@ -13,8 +13,8 @@
         android:hint="@string/usecase_name"
         android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceMediumInverse"
-        android:textColor="#ff000000"
-        android:textSize="17sp" />
+        android:textColor="@color/listview_first_color"
+        android:textSize="@dimen/listview_first_line_size" />
 
     <TextView
         android:id="@+id/usecase_info"
@@ -25,15 +25,15 @@
         android:hint="@string/usecase_introductions"
         android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceSmallInverse"
-        android:textColor="#ff818181"
-        android:textSize="13sp" />
+        android:textColor="@color/listview_second_color"
+        android:textSize="@dimen/listview_second_line_size" />
 
     <View
         android:id="@+id/divider_view"
         android:layout_width="match_parent"
-        android:layout_height="2px"
+        android:layout_height="@dimen/divider_height"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:background="#ffc8c8c8" />
+        android:background="@color/divider_color" />
 
 </RelativeLayout>

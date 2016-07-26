@@ -65,7 +65,7 @@ public class UsecaseAdapter extends BaseAdapter{
         // TODO 自动生成的方法存根
         ViewHolder vh;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.bed_item, null);
+            convertView = mInflater.inflate(R.layout.usecase_item, null);
             vh = new ViewHolder();
             vh.ucName = (TextView) convertView.findViewById(R.id.usecase_name);
             vh.ucInfo = (TextView) convertView.findViewById(R.id.usecase_info);

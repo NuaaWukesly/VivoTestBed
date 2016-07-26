@@ -3,12 +3,32 @@
 
     <!--
     this is a demo for config usecase.
-    <usecase name = "the name of usecase" info = "the summary of usecase" action = "the Action to start component execute usecase"/>
+    <usecase name = "the name of usecase" info = "the summary of usecase" action = "the Action to start component execute usecase"/>
     -->
 
     <usecase
         name="资源获取性能测试"
         action="com.vivo.testbed.performance.getrestest"
         info="资源获取的性能，是否耗时." />
+
+    <usecase
+        name="多线程测试"
+        action="com.vivo.testbed.performance.multithread"
+        info="测试多线程问题，锁、函数栈。。" >
+
+        <!-- 子测试用例 -->
+
+        <multithread_usecase
+            name="this锁测试"
+            action="com.vivo.testbed.performance.multithread.thislock"
+            info="测试多线程调用以this为锁的同步方法，对this对象的影响" >
+        </multithread_usecase>
+
+        <multithread_usecase
+            name="多线程调用同个非同步方法"
+            action="com.vivo.testbed.performance.multithread.callsamefunc"
+            info="测试多个线程调用同个方法，对方法中的局部变量的影响" >
+        </multithread_usecase>
+    </usecase>
 
 </Config>

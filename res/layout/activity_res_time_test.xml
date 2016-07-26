@@ -2,19 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
+    android:layout_marginLeft="@dimen/listview_margin"
+    android:layout_marginRight="@dimen/listview_margin"
     tools:context="${relativePackage}.${activityClass}" >
 
     <TextView
         android:id="@+id/resTestInfo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="@dimen/content_margin"
+        android:layout_marginTop="@dimen/content_margin"
         android:scrollbars="vertical"
         android:text="@string/hello_world"
-        android:textColor="#ff5c5c5c"
-        android:textSize="15sp" />
+        android:textColor="@color/content_color"
+        android:textSize="@dimen/text_normal_size" />
 
 </RelativeLayout>

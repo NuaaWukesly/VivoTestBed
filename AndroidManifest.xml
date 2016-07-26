@@ -18,14 +18,42 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.vivo.testbed.performance.ResTimeTestActivity"
+            android:name=".performance.ResTimeTestActivity"
             android:label="@string/title_activity_res_time_test" >
             <intent-filter>
                 <action android:name="com.vivo.testbed.performance.getrestest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".performance.multithread.ThisLockTest"
+            android:label="@string/title_activity_this_lock_test" >
+            <intent-filter>
+                <action android:name="com.vivo.testbed.performance.multithread.thislock" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".performance.MultiThreadTest"
+            android:label="@string/title_activity_mulit_thread_test" >
+            <intent-filter>
+                <action android:name="com.vivo.testbed.performance.multithread" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vivo.testbed.performance.multithread.CallSameFuncTest"
+            android:label="@string/title_activity_call_same_func_test" >
+            <intent-filter>
+                <action android:name="com.vivo.testbed.performance.multithread.callsamefunc" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
