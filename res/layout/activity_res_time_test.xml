@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="@dimen/listview_margin"
-    android:layout_marginRight="@dimen/listview_margin"
+    android:layout_marginLeft="@dimen/layout_margin"
+    android:layout_marginRight="@dimen/layout_margin"
     tools:context="${relativePackage}.${activityClass}" >
 
     <TextView
@@ -13,7 +13,6 @@
         android:layout_marginBottom="@dimen/content_margin"
         android:layout_marginTop="@dimen/content_margin"
         android:scrollbars="vertical"
-        android:text="@string/hello_world"
         android:textColor="@color/content_color"
         android:textSize="@dimen/text_normal_size" />
 

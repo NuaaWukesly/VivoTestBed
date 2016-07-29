@@ -50,13 +50,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.vivo.testbed.performance.multithread.CallSameFuncTest"
+            android:name=".performance.multithread.CallSameFuncTest"
             android:label="@string/title_activity_call_same_func_test" >
             <intent-filter>
                 <action android:name="com.vivo.testbed.performance.multithread.callsamefunc" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".RunCaseActivity"
+            android:label="@string/title_activity_run_case" >
         </activity>
     </application>
 

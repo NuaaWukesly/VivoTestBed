@@ -6,10 +6,13 @@
     android:layout_marginRight="@dimen/layout_margin"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <ListView
-        android:id="@+id/case_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-    </ListView>
+    <TextView
+        android:id="@+id/running_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/content_margin"
+        android:layout_marginTop="@dimen/content_margin"
+        android:hint="@string/running_info"
+        android:scrollbars="vertical" />
 
 </RelativeLayout>

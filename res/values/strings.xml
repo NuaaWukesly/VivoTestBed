@@ -4,6 +4,7 @@
     <string name="app_name">VivoTestBed</string>
     <string name="hello_world">Hello world!</string>
     <string name="usecase_name">name</string>
+    <string name="running_info">Running Message</string>
     <string name="usecase_introductions">introductions</string>
     <string name="title_activity_res_time_test">ResTimeTestActivity</string>
     <string name="artists_tab_text">Artists</string>
@@ -665,5 +666,6 @@
     <string name="title_activity_this_lock_test">ThisLockTest</string>
     <string name="title_activity_case">CaseActivity</string>
     <string name="title_activity_call_same_func_test">CallSameFuncTest</string>
+    <string name="title_activity_run_case">RunCaseActivity</string>
 
 </resources>
